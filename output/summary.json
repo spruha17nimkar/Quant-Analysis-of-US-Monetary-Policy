@@ -1,0 +1,179 @@
+{
+  "sample": {
+    "quarterly": "1965Q1 to 2026Q2",
+    "quarters": 246,
+    "monthly": "1965-01 to 2026-05",
+    "months": 737,
+    "jump_off": "2026Q2"
+  },
+  "r2": {
+    "taylor_1993_full": 0.493798,
+    "taylor_1993_1987_2008": 0.609879,
+    "static_full": 0.589035,
+    "static_1987_2008": 0.684552,
+    "inertial_quarterly": 0.952276,
+    "inertial_quarterly_changes": 0.177948,
+    "inertial_monthly": 0.982357,
+    "inertial_monthly_changes": 0.052585,
+    "ar1_quarterly": 0.942782,
+    "ar1_monthly": 0.981464,
+    "ar_best_quarterly": 0.950052
+  },
+  "inertial": {
+    "rho_quarterly": 0.903738,
+    "half_life_quarters": 6.848198,
+    "long_run_inflation": 1.63307,
+    "long_run_gap": 1.512196,
+    "rho_monthly": 0.965986
+  },
+  "ar_best_p": 4,
+  "oos": [
+    {
+      "h": 1,
+      "n": 105,
+      "rmse_random_walk": 0.457534,
+      "rmse_ar": 0.444052,
+      "rmse_inertial_taylor": 0.421264,
+      "oos_r2_levels_inertial": 0.955406,
+      "oos_r2_changes_inertial": 0.150724
+    },
+    {
+      "h": 4,
+      "n": 102,
+      "rmse_random_walk": 1.526162,
+      "rmse_ar": 1.679126,
+      "rmse_inertial_taylor": 1.204795,
+      "oos_r2_levels_inertial": 0.585885,
+      "oos_r2_changes_inertial": 0.374483
+    }
+  ],
+  "breaks": {
+    "dates": ["1979Q3", "1991Q3", "2001Q3"],
+    "sup_f": 128.049877,
+    "p_value": 0
+  },
+  "scenarios_end": {
+    "baseline": {
+      "date": "2028Q3",
+      "ff": 3.791924,
+      "gs2": 3.960763,
+      "gs10": 4.470344,
+      "baa_spread": 2.132606
+    },
+    "hawkish": {
+      "date": "2028Q3",
+      "ff": 6.441519,
+      "gs2": 6.445831,
+      "gs10": 6.36214,
+      "baa_spread": 1.858405
+    },
+    "dovish": {
+      "date": "2028Q3",
+      "ff": 0.561739,
+      "gs2": 0.796826,
+      "gs10": 1.997732,
+      "baa_spread": 2.39167
+    }
+  },
+  "duration_pnl": [
+    {
+      "scenario": "baseline",
+      "position": "2-year Treasury",
+      "change_rate_bp": -0.923687,
+      "change_spread_bp": 0,
+      "rate_pnl": 17551.973495,
+      "spread_pnl": 0,
+      "total_pnl": 17551.973495,
+      "dv01": 19000,
+      "_row": "baseline.1"
+    },
+    {
+      "scenario": "baseline",
+      "position": "10-year Treasury",
+      "change_rate_bp": 4.701111,
+      "change_spread_bp": 0,
+      "rate_pnl": -379961.257028,
+      "spread_pnl": 0,
+      "total_pnl": -379961.257028,
+      "dv01": 81000,
+      "_row": "baseline.2"
+    },
+    {
+      "scenario": "baseline",
+      "position": "10-year Baa corporate",
+      "change_rate_bp": 4.701111,
+      "change_spread_bp": 51.26065,
+      "rate_pnl": -356533.05157,
+      "spread_pnl": -3895809.371294,
+      "total_pnl": -4252342.422864,
+      "dv01": 76000,
+      "_row": "baseline.3"
+    },
+    {
+      "scenario": "dovish",
+      "position": "2-year Treasury",
+      "change_rate_bp": -317.317371,
+      "change_spread_bp": 0,
+      "rate_pnl": 6255583.246832,
+      "spread_pnl": 0,
+      "total_pnl": 6255583.246832,
+      "dv01": 19000,
+      "_row": "dovish.1"
+    },
+    {
+      "scenario": "dovish",
+      "position": "10-year Treasury",
+      "change_rate_bp": -242.560137,
+      "change_spread_bp": 0,
+      "rate_pnl": 21853699.346551,
+      "spread_pnl": 0,
+      "total_pnl": 21853699.346551,
+      "dv01": 81000,
+      "_row": "dovish.2"
+    },
+    {
+      "scenario": "dovish",
+      "position": "10-year Baa corporate",
+      "change_rate_bp": -242.560137,
+      "change_spread_bp": 77.166966,
+      "rate_pnl": 20434974.691522,
+      "spread_pnl": -5864689.428037,
+      "total_pnl": 14570285.263485,
+      "dv01": 76000,
+      "_row": "dovish.3"
+    },
+    {
+      "scenario": "hawkish",
+      "position": "2-year Treasury",
+      "change_rate_bp": 247.583085,
+      "change_spread_bp": 0,
+      "rate_pnl": -4566159.507614,
+      "spread_pnl": 0,
+      "total_pnl": -4566159.507614,
+      "dv01": 19000,
+      "_row": "hawkish.1"
+    },
+    {
+      "scenario": "hawkish",
+      "position": "10-year Treasury",
+      "change_rate_bp": 193.880702,
+      "change_spread_bp": 0,
+      "rate_pnl": -14294722.134274,
+      "spread_pnl": 0,
+      "total_pnl": -14294722.134274,
+      "dv01": 81000,
+      "_row": "hawkish.2"
+    },
+    {
+      "scenario": "hawkish",
+      "position": "10-year Baa corporate",
+      "change_rate_bp": 193.880702,
+      "change_spread_bp": 23.840521,
+      "rate_pnl": -13456882.666302,
+      "spread_pnl": -1811879.59695,
+      "total_pnl": -15268762.263252,
+      "dv01": 76000,
+      "_row": "hawkish.3"
+    }
+  ]
+}

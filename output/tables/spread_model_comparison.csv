@@ -1,0 +1,6 @@
+"spec","formula","r2","bic","terms"
+"level_gap","baa_spread ~ spread_lag + output_gap + dff",0.824967880916746,78.5143337101371,"spread_lag 0.830 (t 14.6); output_gap -0.015 (t -0.8); dff -0.264 (t -2.2)"
+"gap_momentum","baa_spread ~ spread_lag + d_gap + output_gap + dff",0.84583037633376,64.0062152188573,"spread_lag 0.873 (t 15.8); d_gap -0.108 (t -2.8); output_gap 0.010 (t 0.6); dff -0.203 (t -2.0)"
+"unemployment","baa_spread ~ spread_lag + d_gap + unemp_gap",0.830693179874258,73.3927677051438,"spread_lag 0.887 (t 15.5); d_gap -0.132 (t -2.7); unemp_gap -0.004 (t -0.3)"
+"policy_stance","baa_spread ~ spread_lag + d_gap + unemp_gap + stance",0.832168187463609,77.0821878915529,"spread_lag 0.872 (t 14.4); d_gap -0.135 (t -2.6); unemp_gap -0.011 (t -0.6); stance -0.014 (t -1.1)"
+"curve_slope","baa_spread ~ spread_lag + d_gap + unemp_gap + slope",0.830712039458074,78.4125648398625,"spread_lag 0.888 (t 15.3); d_gap -0.131 (t -2.6); unemp_gap -0.003 (t -0.1); slope -0.003 (t -0.1)"

@@ -1,0 +1,10 @@
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+
+# Project-local package library (see install.R)
+.Rlib/
+
+# Cached FRED downloads (re-created by run_analysis.R)
+data/

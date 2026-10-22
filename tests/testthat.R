@@ -1,0 +1,6 @@
+# Run with:  Rscript tests/testthat.R   (from the project root)
+local_lib <- file.path(getwd(), ".Rlib")
+if (dir.exists(local_lib)) .libPaths(c(local_lib, .libPaths()))
+library(testthat)
+for (f in sort(list.files("R", pattern = "\\.R$", full.names = TRUE))) source(f)
+test_dir("tests/testthat", stop_on_failure = TRUE)
